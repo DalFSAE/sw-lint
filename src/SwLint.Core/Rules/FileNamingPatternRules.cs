@@ -17,8 +17,8 @@ namespace SwLint.Core.Rules
 
             string[] partNumbers =
             {
-                "DMS-26-PT-MODULE.SLDASM     ",    
-                "DMS-26-PT-MODULE.SLDASM     ",
+                "DMS-26-PT-MODULE.SLDASM",    
+                "DMS-26-PT-MODULE.SLDASM",
                 "DMS-26-AC-MODULE-A100.SLDASM",                            
                 "DMS-26-AC-MODULE-A102.SLDASM",                            
                 "DMS-26-PT-MODULE-A101.SLDASM",                            
