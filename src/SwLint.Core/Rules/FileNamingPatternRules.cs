@@ -7,6 +7,12 @@ namespace SwLint.Core.Rules
     {
         public static void Run()
         {
+            Demo();
+        }
+
+        public static void Demo()
+        {
+
             string[] partNumbers =
             {
                 "1298-673-4192",
@@ -29,7 +35,7 @@ namespace SwLint.Core.Rules
                         TimeSpan.FromMilliseconds(500)
                     );
 
-                    Console.WriteLine(
+            Console.WriteLine(
                         $"{partNumber} {(isMatch ? "is" : "is not")} a valid part number."
                     );
                 }
