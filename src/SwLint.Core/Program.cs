@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using SwLint.Core.Rules;
+
 Console.WriteLine("Hello, World!");
+FileNamePatternRules.Run();
