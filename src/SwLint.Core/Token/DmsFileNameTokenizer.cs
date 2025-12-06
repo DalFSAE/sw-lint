@@ -10,6 +10,11 @@ namespace SwLint.Core.Token
     {
         public static DmsFileNameToken Parse(string fileName)
         {
+
+            string[] tokens = fileName.Split('-');
+
+            // #todo write tokenizer
+
             return new DmsFileNameToken
             {
 
