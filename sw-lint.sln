@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwLint.Core", "src\SwLint.Core\SwLint.Core.csproj", "{E3FAF53C-888D-4ADF-AB24-EB4700EE58F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwLink.Tests", "tests\SwLink.Tests\SwLink.Tests.csproj", "{E61198BE-96E9-4151-97D2-64E2BC7D3B0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwLint.Tests", "tests\SwLink.Tests\SwLint.Tests.csproj", "{E61198BE-96E9-4151-97D2-64E2BC7D3B0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,7 +14,7 @@ namespace SwLint.Core.Token
         public string ID { get; set; } = "";
         public string? Comment { get; set; } = "";
 
-        public bool isValid =>
+        public bool IsValid =>
             !string.IsNullOrWhiteSpace(Prefix) &&
             !string.IsNullOrWhiteSpace(Year) &&
             !string.IsNullOrWhiteSpace(System) &&

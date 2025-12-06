@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SwLint.Core.Token
 {
-    internal class DmsFileNameTokenizer
+    public class DmsFileNameTokenizer
     {
+        public static DmsFileNameToken Parse(string fileName)
+        {
+            return new DmsFileNameToken
+            {
+
+            };
+        }
     }
 }
