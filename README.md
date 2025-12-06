@@ -1,0 +1,2 @@
+# sw-lint
+SolidWorks Linter
