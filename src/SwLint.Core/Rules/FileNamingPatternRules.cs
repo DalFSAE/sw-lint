@@ -1,4 +1,6 @@
 using System;
+using System.Net;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace SwLint.Core.Rules
@@ -15,11 +17,15 @@ namespace SwLint.Core.Rules
 
             string[] partNumbers =
             {
-                "1298-673-4192",
-                "A08Z-931-468a",
-                "_A90-123-129X",
-                "12345-KKA-1230",
-                "0919-2893-1256"
+                "DMS-26-PT-MODULE.SLDASM     ",    
+                "DMS-26-PT-MODULE.SLDASM     ",
+                "DMS-26-AC-MODULE-A100.SLDASM",                            
+                "DMS-26-AC-MODULE-A102.SLDASM",                            
+                "DMS-26-PT-MODULE-A101.SLDASM",                            
+                "DMS-26-PT-MODULE-A103.SLDASM",                            
+                "DMS-26-PT-MODULE-A104.SLDASM",
+                "DMS-26-PT-MODULE-P024.SLDPRT",
+                "DMS-26-PT-MODULE-P025.SLDPRT",
             };
 
             string pattern = @"^[A-Z0-9]\d{2}[A-Z0-9](-\d{3}){2}[A-Z0-9]$";
@@ -45,6 +51,18 @@ namespace SwLint.Core.Rules
                         $"Timeout after {e.MatchTimeout} seconds matching {e.Input}."
                     );
                 }
+            }
+        }
+        // Check if regex pattern matches 
+        public static bool MatchPattern(string input, string pattern)
+        {
+            try
+            {
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
             }
         }
     }
